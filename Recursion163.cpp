@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int Print_N_Natural_Numbers(int n);
+int main()
+{
+    int n;
+    cout<<"Enter any numbers\n";
+    cin>>n;
+    cout<<"Sum is="<<Print_N_Natural_Numbers(n);
+    cout<<endl;
+    return 0;
+}
+int Print_N_Natural_Numbers(int n)
+{
+    if(n)
+    {
+        return 2*n+Print_N_Natural_Numbers(n-1);
+    }
+}
